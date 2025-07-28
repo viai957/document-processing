@@ -1,0 +1,87 @@
+# High-Performance OCR Pipeline Requirements
+# Core Performance & Monitoring
+mlflow==2.9.2
+numpy==1.26.4
+pandas==2.3.0
+psutil==7.0.0
+ujson==5.8.0
+orjson==3.9.10
+
+# Advanced Concurrency & Parallelism
+asyncio==3.4.3
+aiofiles==23.2.1
+aiohttp==3.9.1
+concurrent-futures==3.1.1
+multiprocessing-logging==0.3.4
+
+# Memory & CPU Optimization
+Cython==3.0.6
+numba==0.58.1
+line-profiler==4.1.1
+memory-profiler==0.61.0
+py-spy==0.3.14
+
+# High-Performance Computing
+intel-openmp==2023.2.0
+mkl==2023.2.0
+openblas==0.3.25
+
+# Lock-Free Data Structures
+cffi==1.16.0
+pycparser==2.21
+
+# Caching & Storage
+redis==5.0.1
+diskcache==5.6.3
+lz4==4.3.2
+zstandard==0.22.0
+
+# FastAPI & Async Web
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+hypercorn==0.15.0
+
+# Document Processing & OCR (Optimized)
+docling==2.36.1
+docling-core==2.36.0
+docling-ibm-models==3.4.4
+docling-parse==4.0.4
+rapidocr-onnxruntime==1.4.4
+easyocr==1.7.2
+tesseract==0.1.3
+opencv-python==4.11.0.86
+Pillow-SIMD==10.0.1.post1
+PyMuPDF==1.24.1
+
+# Scientific Computing & Optimization
+scipy==1.15.3
+scikit-learn==1.3.2
+sympy==1.14.0
+
+# Monitoring & Metrics
+prometheus-client==0.19.0
+pynvml==11.5.0
+gpustat==1.1.1
+
+# Database & Message Queues
+sqlalchemy==2.0.23
+alembic==1.13.1
+celery==5.3.4
+kombu==5.3.4
+
+# Development & Profiling
+pytest==7.4.3
+pytest-benchmark==4.0.0
+pytest-asyncio==0.21.1
+locust==2.17.0
+
+# Existing Dependencies (Kept for Compatibility)
+Flask==3.1.0
+openai==1.66.2
+python-dotenv==1.0.1
+requests==2.32.3
+
+# NVIDIA GPU Optimization (Optional)
+# cupy-cuda12x==12.3.0
+# onnxruntime-gpu==1.22.0

@@ -1,0 +1,157 @@
+{
+  "timestamp": 1753709400.1702168,
+  "analysis_duration": 0.05855182599952968,
+  "bundle_analysis": {
+    "total_size": 413236,
+    "total_size_mb": 0.3940925598144531,
+    "file_count": 13,
+    "large_files": [
+      [
+        "trustt_gpt_service/services.py",
+        265822
+      ]
+    ],
+    "size_by_type": {
+      ".txt": 4220,
+      ".md": 9302,
+      ".py": 399714
+    },
+    "average_file_size": 31787.384615384617
+  },
+  "dependency_analysis": {
+    "total_imports": 121,
+    "unique_imports": 54,
+    "most_common_imports": {
+      "os": 9,
+      "dotenv": 8,
+      "logging": 7,
+      "trustt_gpt_service": 6,
+      "flask": 5,
+      "json": 5,
+      "time": 4,
+      "sys": 4,
+      "typing": 3,
+      "pathlib": 3,
+      "datetime": 3,
+      "common": 3,
+      "tempfile": 3,
+      "random": 2,
+      "argparse": 2,
+      "psutil": 2,
+      "dataclasses": 2,
+      "io": 2,
+      "trusttApp": 2,
+      "dateutil": 2
+    },
+    "unused_imports": [
+      "importlib",
+      "tracemalloc",
+      "gc",
+      "ast",
+      "pstats",
+      "cProfile",
+      "memory_profiler",
+      "line_profiler",
+      "subprocess",
+      "requests",
+      "pickle",
+      "hashlib",
+      "decimal",
+      "db_repo",
+      "werkzeug",
+      "veri5_gateway",
+      "google",
+      "traceback",
+      "typing_extensions",
+      "db"
+    ],
+    "import_graph": {
+      "app.py": "{'dotenv', 'flask', 'logging', 'os', 'trustt_gpt_service'}",
+      "run_performance_analysis.py": "{'logging', 'collections', 'random', 'argparse', 'json', 'psutil', 'trustt_gpt_service', 'threading', 'time', 'importlib', 'typing', 'dataclasses', 'os', 'tracemalloc', 'gc', 'ast', 'pathlib', 'pstats', 'cProfile', 'sys', 'multiprocessing', 'memory_profiler', 'line_profiler', 'subprocess', 'io'}",
+      "__init__.py": "{'trusttApp'}",
+      "common/logger.py": "{'dotenv', 'logging', 'functools', 'os', 'time'}",
+      "veri5_gateway/veri5_apis.py": "{'requests', 'json', 'dotenv', 'dateutil', 'flask', 'logging', 'datetime', 'os', 'common', 'random'}",
+      "trustt_gpt_service/db.py": "{'dotenv', 'psycopg2', 'flask', 'logging', 'os', 'sys'}",
+      "trustt_gpt_service/ocrpipeline.py": "{'pickle', 'logging', 'hashlib', 'base64', 'docling', 'numpy', 'argparse', 'json', 're', 'psutil', 'cv2', 'time', 'openai', 'dotenv', 'typing', 'dataclasses', 'os', 'concurrent', 'pathlib', 'PIL', 'trusttApp', 'datetime', 'tempfile', 'sys', 'fitz'}",
+      "trustt_gpt_service/services.py": "{'decimal', 'common', 'base64', 'docling', 'numpy', 'db_repo', 'json', 're', 'werkzeug', 'trustt_gpt_service', 'cv2', 'veri5_gateway', 'time', 'openai', 'dotenv', 'typing', 'flask', 'google', 'traceback', 'os', 'typing_extensions', 'concurrent', 'pathlib', 'PIL', 'dateutil', 'datetime', 'tempfile', 'sys', 'io', 'fitz'}",
+      "trustt_gpt_service/db_repo.py": "{'json', 'dotenv', 'psycopg2', 'logging', 'os', 'trustt_gpt_service'}",
+      "trustt_gpt_service/views.py": "{'dotenv', 'flask', 'db', 'os', 'common', 'tempfile', 'trustt_gpt_service'}",
+      "trustt_gpt_service/__init__.py": "{'trustt_gpt_service'}"
+    }
+  },
+  "memory_analysis": {},
+  "import_analysis": {
+    "import_results": {
+      "trustt_gpt_service.ocrpipeline": {
+        "error": "No module named 'dotenv'",
+        "import_time": 0,
+        "memory_delta": 0,
+        "success": false
+      },
+      "trustt_gpt_service.services": {
+        "error": "No module named 'dotenv'",
+        "import_time": 0,
+        "memory_delta": 0,
+        "success": false
+      },
+      "trustt_gpt_service.views": {
+        "error": "No module named 'dotenv'",
+        "import_time": 0,
+        "memory_delta": 0,
+        "success": false
+      },
+      "trustt_gpt_service.db": {
+        "error": "No module named 'dotenv'",
+        "import_time": 0,
+        "memory_delta": 0,
+        "success": false
+      }
+    },
+    "slow_imports": [],
+    "total_import_time": 0,
+    "total_memory_delta": 0
+  },
+  "ocr_performance": {
+    "pipeline_analysis": {},
+    "bottlenecks_identified": [],
+    "optimization_potential": {},
+    "current_performance": {},
+    "error": "OCR pipeline module not found or not properly implemented"
+  },
+  "optimization_recommendations": [
+    {
+      "category": "Performance Optimization",
+      "priority": "High",
+      "issue": "General performance improvements available",
+      "recommendation": "Implement advanced optimization techniques",
+      "implementation": [
+        "Use Cython for CPU-intensive functions",
+        "Implement SIMD vectorization with Numba",
+        "Add memory pools for frequent allocations",
+        "Use lock-free data structures",
+        "Implement NUMA-aware thread placement",
+        "Add CPU profiling and optimization",
+        "Use profile-guided optimization (PGO)"
+      ],
+      "estimated_impact": "5-10x performance improvement"
+    }
+  ],
+  "system_info": {
+    "cpu_count": 4,
+    "memory_total_gb": 15.62466049194336,
+    "python_version": "3.13.3 (main, Apr  8 2025, 19:55:40) [GCC 14.2.0]",
+    "platform": "linux",
+    "architecture": "x86_64"
+  },
+  "performance_baseline": {
+    "import_time_total": 0,
+    "memory_usage_mb": 33.80078125,
+    "cpu_count": 4,
+    "load_average": [
+      0.19189453125,
+      0.068359375,
+      0.02783203125
+    ],
+    "computation_time": 0.0007033649999357294
+  }
+}
